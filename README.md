@@ -16,9 +16,9 @@ for (let i = 0; i < 3; i++);
 }
 ```
 
-In the first example, the developer wants the `if` body to be executed only if `falseCondition` is met, but because he mistakenly typed a semicolon next to the parenthesis, the `{ ... }` block isn't treated as `if` body, so it always gets executed.
+In the first example, the developer wants the `if` body to be executed only if `falseCondition` is met, but because he mistakenly typed a semicolon next to the parenthesis, the `{ ... }` block doesn't belong to `if`, so it always gets executed.
 
-In the second example, the developer wants `doSomethingInLoop()` to be executed 3 times, but because he mistakenly typed a semicolon next to the parenthesis, the `{ ... }` block isn't treated as `for` body, so it gets executed only once.
+In the second example, the developer wants `doSomethingInLoop()` to be executed 3 times, but because he mistakenly typed a semicolon next to the parenthesis, the `{ ... }` block doesn't belong to `for`, so it gets executed only once.
 
 If the `if` or `for` body is simply a semicolon, this semicolon is an "empty statement". Note that this is not "empty block", which is `{}`.
 
