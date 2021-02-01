@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-no-empty-statement",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "disallow empty statement as the body of `if`, `for`, etc.",
     "keywords": ["eslint", "eslintplugin"],
     "author": "Zhenzhen Zhan <zhanzhenzhen@hotmail.com>",

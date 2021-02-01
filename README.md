@@ -24,6 +24,19 @@ If the `if` or `for` body is simply a semicolon, this semicolon is an "empty sta
 
 This rule disallows this form of semicolons.
 
+# Usage
+
+In your eslint config file:
+
+```json
+{
+    "plugins": ["no-empty-statement"],
+    "rules": {
+        "no-empty-statement/no-empty-statement": "error"
+    }
+}
+```
+
 This rule has a string option:
 
 - `"ignore-statement-list-item"` (default) allows "empty statement semicolons" in a container that can have multiple statements, for example an extra semicolon in the block `{ doSomething(); ; }`
