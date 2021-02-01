@@ -1,0 +1,20 @@
+{
+    "name": "eslint-plugin-no-empty-statement",
+    "version": "0.1.0",
+    "description": "disallow empty statement as the body of `if`, `for`, etc.",
+    "keywords": ["eslint", "eslintplugin"],
+    "author": "Zhenzhen Zhan <zhanzhenzhen@hotmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zhanzhenzhen/eslint-plugin-no-empty-statement.git"
+    },
+    "main": "./lib/main",
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}
