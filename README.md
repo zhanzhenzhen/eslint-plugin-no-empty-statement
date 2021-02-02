@@ -20,7 +20,7 @@ In the first example, the developer wants the `if` body to be executed only if `
 
 In the second example, the developer wants `doSomethingInLoop()` to be executed 3 times, but because he mistakenly typed a semicolon next to the parenthesis, the `{ ... }` block doesn't belong to `for`, so it gets executed only once.
 
-If the `if` or `for` body is simply a semicolon, this semicolon is an "empty statement". Note that this is not "empty block", which is `{}`.
+If the `if` or `for` body is simply a semicolon, this semicolon is an "empty statement". (Not to be confused with "empty block", which is `{}`.)
 
 This rule disallows this form of semicolons.
 
@@ -39,5 +39,5 @@ In your eslint config file:
 
 This rule has a string option:
 
-- `"ignore-statement-list-item"` (default) allows "empty statement semicolons" in a container that can have multiple statements, for example an extra semicolon in the block `{ doSomething(); ; }`
+- `"ignore-statement-list-item"` (default) disallows "empty statement semicolons", except those in a container that can have multiple statements, for example an extra semicolon in the block `{ doSomething(); ; }`
 - `"all"` disallows all "empty statement semicolons".
